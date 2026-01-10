@@ -132,18 +132,31 @@ uvicorn app:app --reload
 Open frontend/index.html in browser.
 
 🧪 Concepts Implemented
+
 Concept	Description
+
 Embeddings	Transform text into semantic vectors
+
 Vector Search	Nearest-neighbor similarity retrieval
+
 RAG	Retrieval-Augmented Generation
+
 Grounding	LLM answers constrained to data
+
 API Design	FastAPI endpoints
+
 Full-Stack AI	Frontend + Backend + LLM + DB
 
 🎯 Learning Outcomes
+
 Built production-style RAG pipeline
+
 Implemented vector databases
+
 Integrated LLM inference APIs
+
 Designed AI-driven backend services
+
 Developed full-stack AI application
+
 Understood hallucination control in LLMs
