@@ -1,0 +1,39 @@
+Argo floats are autonomous instruments that drift with ocean currents and periodically dive through the water column.
+
+A typical Argo float operates on a repeating cycle that lasts about 10 days.
+
+During this cycle, the float descends to a parking depth of approximately 1000 meters.
+
+It remains at this depth for several days while drifting with subsurface currents.
+
+After the drifting phase, the float descends further to a depth of about 2000 meters.
+
+As it ascends back to the surface, the float measures temperature and salinity profiles.
+
+These measurements create a vertical snapshot of ocean conditions.
+
+Once at the surface, the float transmits the collected data via satellite communication systems.
+
+After data transmission, the float deflates its external bladder and sinks again to begin a new cycle.
+
+Most standard Argo floats operate down to 2000 meters, covering the upper ocean.
+
+Deep Argo floats are capable of reaching depths of up to 6000 meters.
+
+Biogeochemical Argo floats measure additional variables such as dissolved oxygen, nitrate, pH, and chlorophyll.
+
+These measurements help scientists study ocean ecosystems and carbon cycling.
+
+Argo floats are powered by long-life batteries designed to operate for several years.
+
+A typical float remains operational for four to five years before battery depletion.
+
+Over time, floats may be lost due to harsh ocean conditions or mechanical failure.
+
+Despite these losses, the global Argo network maintains approximately 4000 active floats.
+
+Floats are deployed from research vessels and commercial ships across the world’s oceans.
+
+The wide distribution of floats ensures coverage of remote and previously under-sampled regions.
+
+Argo floats provide consistent and standardized measurements, enabling reliable long-term climate analysis.
