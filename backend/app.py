@@ -8,8 +8,6 @@ from langchain_huggingface import HuggingFaceEndpoint
 from langchain_huggingface import ChatHuggingFace
 from langchain_huggingface import HuggingFaceEndpoint
 
-
-#  FastAPI 
 app = FastAPI()
 
 app.add_middleware(
@@ -20,16 +18,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-#  Schema
+
 class Question(BaseModel):
     question: str
 
-#  Embeddings 
+ 
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
-# Load FAISS
 db = FAISS.load_local(
     "argo_db",
     embeddings,
@@ -50,18 +47,13 @@ llm = ChatHuggingFace(
 def chat(req: Question):
     query = req.question.strip()
 
-    # 1️ Greetings 
     if query.lower() in ["hi", "hello", "hey", "yo"]:
         return {"answer": "Hello! Ask me something about ARGO ocean data."}
 
-    # 2️ Retrieve from FAISS (NO score filtering)
     docs = db.similarity_search(query, k=3)
 
-    # 3️ If nothing retrieved → reject
     if not docs:
         return {"answer": "I can answer questions only about the ARGO data."}
-
-    # 4️ Build context from retrieved docs
     context = "\n\n".join(doc.page_content for doc in docs)
 
     prompt = f"""
